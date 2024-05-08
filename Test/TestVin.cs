@@ -55,17 +55,6 @@ namespace Test
             Assert.IsTrue(Vin.IsValid("1FTKR1ADXAPA11957"), "Is true because this is a real VIN (I hope)");
         }
 
-        //[TestMethod]
-        //public void TestNissanVin()
-        //{
-        //    var decoder = new VinDecoder();
-        //    var yeaar = decoder.GetVinYear("JN1TBNT30U0127688");
-
-        //    var manufacturer = Vin.GetWorldManufacturer("JN1TBNT30U0127688");
-        //    var year = Vin.GetModelYear("JN1TBNT30U0127688");
-        //    Assert.Equals();
-        //}
-
         [TestMethod]
         [DataRow("JNKBV61F77M804426", 2007, "Infiniti", "G", "35x")]
         public void TestValidVins(string vin, int year, string brand, string model, string modification)
